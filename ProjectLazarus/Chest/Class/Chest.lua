@@ -21,11 +21,7 @@ function Chest.new()
 end
 
 function Chest:Init()
-    self:ChangePlace()
-end
-
-function Chest:GetRandomWeaponFromList()
-
+    self.Chest.Parent = workspace
 end
 
 function Chest:ChangePlace()
