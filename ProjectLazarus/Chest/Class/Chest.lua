@@ -13,7 +13,7 @@ function Chest.new()
 
     self.Chest = ReplicatedStorage.Assets.Chest:Clone()
       
-    setmetatable(self, Behaviour)
+    setmetatable(self, Chest)
 
     self:Init()
 
@@ -30,7 +30,7 @@ end
 
 -- might want to call before map voting
 function Chest:Destroy()
-    self.Chest:Destroy()
+    
 end
 
 return Chest
