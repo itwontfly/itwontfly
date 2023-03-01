@@ -6,7 +6,7 @@ local Weapons = require(script.Parent.Parent.Lists.Weapons)
 local RNG = Random.new()
 
 local Chest = {}
-Chest.__index = Behaviour
+Chest.__index = Chest
 
 function Chest.new()
     local self = {}
