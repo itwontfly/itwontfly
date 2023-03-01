@@ -1,6 +1,7 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Positions = require(script.Parent.Positions)
+local CFrames = require(script.Parent.Parent.Lists.CFrames)
+local Weapons = require(script.Parent.Parent.Lists.Weapons)
 
 local RNG = Random.new()
 
@@ -23,8 +24,12 @@ function Chest:Init()
     self:ChangePlace()
 end
 
+function Chest:GetRandomWeaponFromList()
+
+end
+
 function Chest:ChangePlace()
-    self.Chest.CFrame = Positions[RNG:NextInteger(1, #Positions)]
+    self.Chest.CFrame = CFrames[RNG:NextInteger(1, #CFrames)]
 end
 
 -- might want to call before map voting
